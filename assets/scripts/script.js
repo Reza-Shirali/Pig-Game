@@ -51,7 +51,7 @@ const holdHandler = () => {
       scores[activePlayer];
   }
 
-  if (scores[activePlayer] >= 20) {
+  if (scores[activePlayer] >= 100) {
     playing = false;
     dice.style.display = "none";
     document
@@ -65,15 +65,17 @@ const holdHandler = () => {
   }
 };
 const newHandler = () => {
-  //   scores = [0, 0];
-  //   scorePlayer0.textContent = 0;
-  //   scorePlayer1.textContent = 0;
-  //   currentScore = scores[activePlayer];
-  //   if (activePlayer === 0 || activePlayer === 1) {
-  //     activePlayer = 0;
-  //     playerEl0.classList.toggle("player--active");
-  //     playerEl1.classList.toggle("player--active");
-  //   }
+    scores = [0, 0];
+    currentScore = 0;
+    activePlayer = 0;
+    playing = true;
+    dice.style.display = "none";
+    scorePlayer0.textContent = 0;
+    scorePlayer1.textContent = 0;
+    playerEl0.classList.remove("player--winner");
+    playerEl1.classList.remove("player--winner");
+    playerEl0.classList.add("player--active");
+    playerEl1.classList.remove("player--active")
 };
 
 btnRoll.addEventListener("click", rollHandler);
