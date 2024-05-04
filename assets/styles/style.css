@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -164,4 +164,80 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+@media screen and (max-width: 750px) {
+  .btn--new {
+    padding: 0.5rem 2rem;
+  }
+  .name {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .current {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .current-label {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 653px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .current-label {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  .name {
+    font-size: 2rem;
+  }
+  .current-label {
+    font-size: 1rem;
+  }
+  .btn--roll,
+  .btn--hold {
+    padding: 0.5rem 2rem;
+  }
+  .current{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 562px) {
+  .name {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .player {
+    padding: 4rem;
+  }
+  .btn--hold{
+    top:32.1rem
+  }
+  .btn--roll{
+    top:26.3rem
+  }
+  .btn--new{
+    top: 20rem;
+  }
+}
+@media screen and (max-width: 370px) {
+
+  .btn--new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  .current{
+    width: 120%;
+  }
 }
