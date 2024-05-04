@@ -229,8 +229,8 @@ main {
     top: 20rem;
   }
   .dice {
-    top: 11.5rem;
-    height: 7rem;
+    top: 11.5rem !important;
+    height: 7rem !important;
   }
 }
 @media screen and (max-width: 370px) {
