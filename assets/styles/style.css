@@ -205,7 +205,7 @@ main {
   .btn--hold {
     padding: 0.5rem 2rem;
   }
-  .current{
+  .current {
     width: 90%;
   }
 }
@@ -213,31 +213,35 @@ main {
   .name {
     font-size: 1.5rem;
   }
+
 }
 @media screen and (max-width: 530px) {
   .player {
     padding: 4rem;
   }
-  .btn--hold{
-    top:32.1rem
+  .btn--hold {
+    top: 32.1rem;
   }
-  .btn--roll{
-    top:26.3rem
+  .btn--roll {
+    top: 26.3rem;
   }
-  .btn--new{
+  .btn--new {
     top: 20rem;
+  }
+  .dice {
+    top: 11.5rem;
+    height: 7rem;
   }
 }
 @media screen and (max-width: 370px) {
-
-  .btn--new{
+  .btn--new {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
-  .current{
+  .current {
     width: 120%;
   }
 }
